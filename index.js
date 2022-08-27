@@ -1,8 +1,9 @@
 const level = document.querySelector(".level");
+
 const deckBtn = document.querySelector(".deck-button");
 const deck = document.querySelector(".deck");
 const deckOpen = document.querySelector(".deck-open");
-console.log(deckBtn);
+const ancientCardArray = Array.from(document.querySelectorAll(".ancient-card"));
 
 level.addEventListener("click", (event) => {
   deckBtn.classList.add("deck-button--visible");
@@ -30,37 +31,3 @@ deck.addEventListener("click", (event) => {
   let randomNum = getRandomNum(1, 12);
   deckOpen.style.backgroundImage = `url(./assets/MythicCards/${deckColor1[i]}/${deckColor1[i]}${randomNum}.png)`;
 });
-
-// const cardData = {
-//   {
-//     id: 'green1',
-//     cardFace: greenCardsAssets.green1,
-//     difficulty: 'easy',
-//     color:'green'
-//   },
-//   {
-//     id: 'green2',
-//     cardFace: greenCardsAssets.green2,
-//     difficulty: 'hard',
-//     color:'green'
-//   },
-//   {
-//     id: 'green3',
-//     cardFace: greenCardsAssets.green3,
-//     difficulty: 'hard',
-//     color:'green'
-//   },
-//   {
-//     id: 'green4',
-//     cardFace: greenCardsAssets.green4,
-//     difficulty: 'hard',
-//     color:'green'
-//   },
-//   {
-//     id: 'green5',
-//     cardFace: greenCardsAssets.green5,
-//     difficulty: 'hard',
-//     color:'green'
-//   },
-
-// }
